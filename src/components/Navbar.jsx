@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react"
-import { Search, Menu, X, Sparkles, Compass, BookOpen, Clock, Layers, Info, Languages, ArrowRight } from "lucide-react"
+import { Search, Menu, X, Sparkles, Compass, BookOpen, Clock, Layers, Info, Languages, ArrowRight, Star } from "lucide-react"
 import { useLanguage } from "../context/LanguageContext"
 import { storiesData } from "../data/stories"
 
@@ -39,6 +39,7 @@ function Navbar({ onSelectStory }) {
     { name: t.nav.stories, href: "#stories", icon: BookOpen },
     { name: t.nav.categories, href: "#categories", icon: Layers },
     { name: t.nav.timeline, href: "#timeline", icon: Clock },
+    { name: t.nav.ratings, href: "#ratings", icon: Star },
     { name: t.nav.about, href: "#about", icon: Info },
   ]
 

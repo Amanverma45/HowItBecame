@@ -23,47 +23,47 @@ function FeaturedEvolutions({ onSelectStory }) {
           </p>
         </div>
 
-        {/* Grid of 4 Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        {/* Grid of 3x3 Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {storiesData.map((item) => (
             <div
               key={item.id}
-              className="group relative rounded-3xl border border-slate-200 bg-white p-5 flex flex-col justify-between shadow-sm hover:shadow-xl hover:border-blue-500 transition-all duration-300"
+              className="group relative rounded-3xl border border-slate-200 bg-white p-6 flex flex-col justify-between shadow-sm hover:shadow-xl hover:border-blue-500 transition-all duration-300"
             >
               <div>
                 {/* Category Badge */}
-                <span className="inline-block px-3 py-1 text-[11px] font-extrabold tracking-wider text-blue-700 bg-blue-50 border border-blue-200 rounded-full uppercase mb-3">
+                <span className="inline-block px-3.5 py-1 text-xs font-extrabold tracking-wider text-blue-700 bg-blue-50 border border-blue-200 rounded-full uppercase mb-4">
                   {item.category[lang]}
                 </span>
 
                 {/* Dual Image Comparison Preview */}
-                <div className="grid grid-cols-2 gap-2 rounded-2xl overflow-hidden mb-4 border border-slate-200 bg-slate-100 p-1">
-                  <div className="relative h-28 rounded-xl overflow-hidden">
+                <div className="grid grid-cols-2 gap-3 rounded-2xl overflow-hidden mb-5 border border-slate-200 bg-slate-100 p-1.5">
+                  <div className="relative h-36 sm:h-40 rounded-xl overflow-hidden">
                     <img
                       src={item.thenImage}
                       alt={item.then[lang]}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     />
                     <div className="absolute inset-0 bg-slate-900/30" />
-                    <span className="absolute bottom-1.5 left-1.5 text-[9px] font-extrabold text-white bg-slate-900/80 px-1.5 py-0.5 rounded uppercase">
+                    <span className="absolute bottom-2 left-2 text-[10px] font-extrabold text-white bg-slate-900/85 px-2 py-0.5 rounded uppercase backdrop-blur-xs">
                       {item.then[lang]}
                     </span>
                   </div>
                   
-                  <div className="relative h-28 rounded-xl overflow-hidden border-2 border-amber-400">
+                  <div className="relative h-36 sm:h-40 rounded-xl overflow-hidden border-2 border-amber-400">
                     <img
                       src={item.nowImage}
                       alt={item.now[lang]}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     />
                     <div className="absolute inset-0 bg-slate-900/20" />
-                    <span className="absolute bottom-1.5 left-1.5 text-[9px] font-extrabold text-slate-950 bg-amber-400 px-1.5 py-0.5 rounded uppercase">
+                    <span className="absolute bottom-2 left-2 text-[10px] font-extrabold text-slate-950 bg-amber-400 px-2 py-0.5 rounded uppercase shadow-xs">
                       {item.now[lang]}
                     </span>
                   </div>
                 </div>
 
-                <p className="text-xs text-slate-600 leading-relaxed font-medium line-clamp-2">
+                <p className="text-sm text-slate-600 leading-relaxed font-medium line-clamp-2">
                   {item.tagline[lang]}
                 </p>
               </div>

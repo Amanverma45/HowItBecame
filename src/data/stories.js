@@ -6,6 +6,7 @@ export const ContentData = {
       categories: "Categories",
       timeline: "Timeline",
       whyEvolve: "Why Evolve",
+      ratings: "Ratings & Reviews",
       about: "About",
       searchPlaceholder: "Search how anything evolved...",
       randomEvolution: "Random Story",
@@ -40,6 +41,24 @@ export const ContentData = {
       title: "Every version solves a problem.",
       subtitle: "Behind every modern convenience lies a cycle of friction, breakthrough, and transformation.",
     },
+    ratings: {
+      tag: "COMMUNITY VOICES",
+      title: "Reader Ratings & Experience",
+      subtitle: "Share your rating and feedback on How It Became. Your thoughts help inspire future stories!",
+      overallRating: "Overall Rating",
+      outOf: "out of 5 stars",
+      totalReviews: "Community Ratings",
+      rateExperience: "Rate Your Experience",
+      yourName: "Your Name",
+      yourNamePlaceholder: "e.g. Aman Verma",
+      yourFeedback: "Your Review / Feedback",
+      yourFeedbackPlaceholder: "What did you think of the evolutions, visuals, and history?",
+      submitBtn: "Submit Rating & Review",
+      successMsg: "Thank you for your rating! Your review is now live.",
+      filterAll: "All Reviews",
+      verifiedReader: "Verified Reader",
+      ratePrompt: "Click a star to rate:"
+    },
     footer: {
       tagline: "Uncovering the journey from idea to today.",
       rights: "All rights reserved.",
@@ -62,6 +81,7 @@ export const ContentData = {
       categories: "श्रेणियाँ (Categories)",
       timeline: "समय-चक्र (Timeline)",
       whyEvolve: "क्यों बदला (Why Evolve)",
+      ratings: "रेटिंग व समीक्षाएं",
       about: "हमारे बारे में",
       searchPlaceholder: "खोजें कि चीज़ें कैसे विकसित हुईं...",
       randomEvolution: "यादृच्छिक कहानी",
@@ -95,6 +115,24 @@ export const ContentData = {
       tag: "संपादकीय दृष्टिकोण",
       title: "हर नया रूप एक समस्या का समाधान है।",
       subtitle: "हर आधुनिक सुविधा के पीछे असुविधा, तकनीकी खोज और रूपांतरण का एक चक्र होता है।",
+    },
+    ratings: {
+      tag: "पाठकों की राय",
+      title: "रेटिंग और अनुभव समीक्षा",
+      subtitle: "How It Became पर अपना अनुभव और रेटिंग साझा करें। आपकी राय हमें और बेहतर कहानियाँ जोड़ने में मदद करती है!",
+      overallRating: "कुल रेटिंग",
+      outOf: "5 में से स्टार्स",
+      totalReviews: "पाठक समीक्षाएं",
+      rateExperience: "अपनी रेटिंग दें",
+      yourName: "आपका नाम",
+      yourNamePlaceholder: "उदा. अमन वर्मा",
+      yourFeedback: "आपकी समीक्षा / विचार",
+      yourFeedbackPlaceholder: "आपको कहानियाँ, तुलनात्मक चित्र और इतिहास कैसा लगा?",
+      submitBtn: "रेटिंग और समीक्षा सबमिट करें",
+      successMsg: "रेटिंग देने के लिए धन्यवाद! आपकी समीक्षा लाइव हो गई है।",
+      filterAll: "सभी समीक्षाएं",
+      verifiedReader: "सत्यापित पाठक",
+      ratePrompt: "रेटिंग देने के लिए स्टार चुनें:"
     },
     footer: {
       tagline: "विचार से लेकर आज तक का सफ़र।",
@@ -223,8 +261,8 @@ export const storiesData = [
     category: { en: "Photography", hi: "फोटोग्राफी (Photography)" },
     then: { en: "Film Camera", hi: "फिल्म रील कैमरा" },
     now: { en: "Smartphone Camera", hi: "AI स्मार्टफोन कैमरा" },
-    thenImage: "/images/telephone_then.jpg",
-    nowImage: "/images/smartphone_now.jpg",
+    thenImage: "/images/filmcamera_then.jpg",
+    nowImage: "/images/camera_now.jpg",
     tagline: {
       en: "From darkroom chemical prints to instant 4K multi-lens computational capture.",
       hi: "केमिकल डार्कथरूम की रील से लेकर कंप्यूटेशनल 4K AI फोटो तक।"
@@ -324,8 +362,8 @@ export const storiesData = [
     category: { en: "Entertainment", hi: "मनोरंजन (Entertainment)" },
     then: { en: "Vinyl Record", hi: "विनाइल रिकॉर्ड" },
     now: { en: "Music Streaming", hi: "म्यूजिक स्ट्रीमिंग" },
-    thenImage: "/images/telephone_then.jpg",
-    nowImage: "/images/smartphone_now.jpg",
+    thenImage: "/images/vinyl_then.jpg",
+    nowImage: "/images/streaming_now.jpg",
     tagline: {
       en: "From delicate spinning vinyl discs to instant cloud access to 100M+ songs.",
       hi: "विनाइल डिस्क से लेकर क्लाउड पर 10 करोड़ से ज्यादा गानों की तुरंत पहुंच तक।"
@@ -374,8 +412,8 @@ export const storiesData = [
     category: { en: "Communication", hi: "संचार (Communication)" },
     then: { en: "Written Letter", hi: "डाक चिट्ठी (Letter)" },
     now: { en: "Instant Messaging", hi: "इंस्टेंट मैसेजिंग" },
-    thenImage: "/images/telephone_then.jpg",
-    nowImage: "/images/smartphone_now.jpg",
+    thenImage: "/images/letter_then.jpg",
+    nowImage: "/images/messaging_now.jpg",
     tagline: {
       en: "From weeks of postal train delivery to instant encrypted global chat.",
       hi: "हफ़्तों तक चलने वाली डाक गाड़ी से लेकर सेकंडों में एन्क्रिप्टेड चैट तक।"
@@ -424,8 +462,8 @@ export const storiesData = [
     category: { en: "Transportation", hi: "परिवहन (Transportation)" },
     then: { en: "Horse Carriage", hi: "घोड़ा गाड़ी (Horse Carriage)" },
     now: { en: "Electric Vehicle", hi: "इलेक्ट्रिक वाहन (EV)" },
-    thenImage: "/images/telephone_then.jpg",
-    nowImage: "/images/smartphone_now.jpg",
+    thenImage: "/images/carriage_then.jpg",
+    nowImage: "/images/electriccar_now.jpg",
     tagline: {
       en: "From animal power to self-driving high-voltage battery powertrains.",
       hi: "जानवरों की ताक़त से लेकर सेल्फ-ड्राइविंग हाई-वोल्टेज बैटरी गाड़ियों तक।"
@@ -474,8 +512,8 @@ export const storiesData = [
     category: { en: "Information", hi: "ज्ञान व सूचना (Information)" },
     then: { en: "Physical Library", hi: "भौतिक पुस्तकालय (Library)" },
     now: { en: "AI Search Engine", hi: "AI सर्च इंजन" },
-    thenImage: "/images/telephone_then.jpg",
-    nowImage: "/images/smartphone_now.jpg",
+    thenImage: "/images/library_then.jpg",
+    nowImage: "/images/searchengine_now.jpg",
     tagline: {
       en: "From searching wooden index card drawers to instant neural AI synthesis.",
       hi: "लकड़ी के कार्ड ड्रॉअर में ढूँढने से लेकर AI के तुरंत विस्तृत जवाबों तक।"
@@ -524,8 +562,8 @@ export const storiesData = [
     category: { en: "Everyday Life", hi: "दैनिक जीवन (Everyday Life)" },
     then: { en: "Paper Diary", hi: "कागज़ी डायरी (Diary)" },
     now: { en: "Cloud Synced Notes", hi: "क्लाउड सिंक डिजिटल नोट्स" },
-    thenImage: "/images/telephone_then.jpg",
-    nowImage: "/images/smartphone_now.jpg",
+    thenImage: "/images/diary_then.jpg",
+    nowImage: "/images/cloudnotes_now.jpg",
     tagline: {
       en: "From ink on leather-bound paper to instant multi-device synced AI notes.",
       hi: "कागज़ी डायरी पर स्याही से लिखने से लेकर सभी डिवाइसों में सिंक होने वाले डिजिटल नोट्स तक।"
@@ -572,8 +610,8 @@ export const storiesData = [
     category: { en: "Everyday Life", hi: "दैनिक जीवन (Everyday Life)" },
     then: { en: "Mechanical Alarm", hi: "मैकेनिकल अलार्म घड़ी" },
     now: { en: "Smart AI Assistant", hi: "स्मार्ट AI असिस्टेंट" },
-    thenImage: "/images/telephone_then.jpg",
-    nowImage: "/images/smartphone_now.jpg",
+    thenImage: "/images/alarmclock_then.jpg",
+    nowImage: "/images/smartassistant_now.jpg",
     tagline: {
       en: "From wind-up mechanical bells to voice-controlled smart home automation.",
       hi: "चाबी वाली अलार्म घड़ियों से लेकर वॉयस-कंट्रोल स्मार्ट होम ऑटोमेशन तक।"

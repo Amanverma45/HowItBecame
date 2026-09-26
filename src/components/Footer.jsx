@@ -33,6 +33,7 @@ function Footer() {
           <a href="#explore" className="hover:text-blue-600 transition-colors">{t.nav.explore}</a>
           <a href="#stories" className="hover:text-blue-600 transition-colors">{t.nav.stories}</a>
           <a href="#timeline" className="hover:text-blue-600 transition-colors">{t.nav.timeline}</a>
+          <a href="#ratings" className="hover:text-blue-600 transition-colors">{t.nav.ratings}</a>
           <a href="#about" className="hover:text-blue-600 transition-colors">{t.nav.about}</a>
         </nav>
 
@@ -41,14 +42,14 @@ function Footer() {
           <div>© {new Date().getFullYear()} HIB. {t.footer.rights}</div>
           <span className="hidden sm:inline text-slate-300">•</span>
           <div>
-            Owner & Developed by{" "}
+            Conceived & Built by{" "}
             <a
               href="https://webforge-lab.netlify.app"
               target="_blank"
               rel="noopener noreferrer"
               className="font-extrabold text-blue-600 hover:text-blue-700 hover:underline inline-flex items-center gap-1"
             >
-              webforge_lab
+              WebForge Lab
             </a>
           </div>
         </div>

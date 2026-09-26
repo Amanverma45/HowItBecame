@@ -6,6 +6,7 @@ import FeaturedEvolutions from "./components/FeaturedEvolutions"
 import Categories from "./components/Categories"
 import Timeline from "./components/Timeline"
 import WhyEvolve from "./components/WhyEvolve"
+import RatingSection from "./components/RatingSection"
 import Footer from "./components/Footer"
 import StoryModal from "./components/StoryModal"
 
@@ -32,6 +33,9 @@ function MainApp() {
 
         {/* Why Things Evolve (Editorial Section) */}
         <WhyEvolve />
+
+        {/* Community Ratings & Feedback */}
+        <RatingSection />
       </main>
 
       {/* Footer */}
